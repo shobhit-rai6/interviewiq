@@ -155,11 +155,11 @@ Strict Rules:
 - Questions must feel practical and realistic.
 
 Difficulty progression:
-Question 1 → easy  
-Question 2 → easy  
-Question 3 → medium  
-Question 4 → medium  
-Question 5 → hard  
+Question 1 → medium 
+Question 2 → medium
+Question 3 → hard or advance 
+Question 4 → hard or advance
+Question 5 → hard or advance
 
 Make questions based on the candidate’s role, experience,interviewMode, projects, skills, and resume details.
 `
@@ -207,7 +207,7 @@ Make questions based on the candidate’s role, experience,interviewMode, projec
       questions: questionsArray.map((q, index) => ({
         question: q,
         difficulty: ["easy", "easy", "medium", "medium", "hard"][index],
-        timeLimit: [60, 60, 90, 90, 120][index],
+        timeLimit: [90, 90, 120, 120, 120][index],
       }))
     })
 
