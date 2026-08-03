@@ -7,7 +7,7 @@ export const askAi = async (messages) => {
         }
         const response = await axios.post("https://openrouter.ai/api/v1/chat/completions",
             {
-                model: "deepseek/deepseek-v4-flash-0731",
+                model: "openai/gpt-4o-mini",
                 messages: messages
 
             },
