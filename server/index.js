@@ -10,8 +10,13 @@ import interviewRouter from "./routes/interview.route.js"
 import paymentRouter from "./routes/payment.route.js"
 
 const app = express()
+const allowedOrigins = [
+    "https://interviewiq-1-hwgw.onrender.com",
+    "http://localhost:5173"
+]
+
 app.use(cors({
-    origin:"https://interviewiq-1-hwgw.onrender.com",
+    origin: allowedOrigins,
     credentials:true
 }))
 
